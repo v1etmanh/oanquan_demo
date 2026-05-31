@@ -1,0 +1,62 @@
+[
+  {
+    "province_id": "ha_noi",
+    "name": "Hà Nội",
+    "tagline": "Ngàn năm văn hiến",
+    "lore_intro": "Bên Hồ Gươm, tiếng sỏi vang trên mặt đất gạch cổ. Hà Nội — nơi trò chơi dân gian được truyền từ đời này sang đời khác.",
+    "lore_win": "Chiến thắng tại đất kinh kỳ! Rồng Thăng Long gật đầu chứng kiến.",
+    "lore_lose": "Hà Nội chưa khuất phục. Kinh đô ngàn năm không dễ bị chinh phục.",
+    "fun_fact": "Ô ăn quan được chơi tại đây từ thế kỷ 11, khi Lý Thái Tổ dời đô về Thăng Long.",
+    "ai_level": 1,
+    "region": "bac_bo",
+    "unlock_after": null
+  },
+  {
+    "province_id": "ha_giang",
+    "name": "Hà Giang",
+    "tagline": "Cổng trời phía Bắc",
+    "lore_intro": "Trên những thửa ruộng bậc thang Đồng Văn, trẻ em chơi ô ăn quan bằng đá cuội từ suối Nho Quế.",
+    "lore_win": "Vượt qua Cổng Trời! Sương mù núi cao không che khuất được tài năng của bạn.",
+    "lore_lose": "Núi đá tai mèo vẫn đứng vững. Hà Giang chờ bạn quay lại.",
+    "fun_fact": "Cao nguyên đá Đồng Văn là một trong bốn công viên địa chất toàn cầu của Việt Nam.",
+    "ai_level": 1,
+    "region": "bac_bo",
+    "unlock_after": "ha_noi"
+  },
+  {
+    "province_id": "ninh_binh",
+    "name": "Ninh Bình",
+    "tagline": "Hạ Long trên cạn",
+    "lore_intro": "Giữa những dãy núi đá vôi Tràng An, người dân chơi ô ăn quan trên những chiếc thuyền nan lướt qua hang động.",
+    "lore_win": "Tinh tế như dòng sông Hoàng Long — bạn đã chinh phục Cố đô Hoa Lư!",
+    "lore_lose": "Cố đô Hoa Lư còn nhiều bí ẩn. Hãy trở lại khám phá tiếp.",
+    "fun_fact": "Ninh Bình là kinh đô đầu tiên của nhà nước phong kiến Việt Nam thống nhất dưới thời Đinh Tiên Hoàng.",
+    "ai_level": 2,
+    "region": "bac_bo",
+    "unlock_after": "ha_giang"
+  },
+  {
+    "province_id": "da_nang",
+    "name": "Đà Nẵng",
+    "tagline": "Thành phố đáng sống",
+    "lore_intro": "Dưới chân Ngũ Hành Sơn, tiếng sóng biển Mỹ Khê hòa với tiếng sỏi rơi. Đà Nẵng — nơi cổ điển gặp hiện đại.",
+    "lore_win": "Xứng danh Thành phố Đáng Sống! Cầu Rồng phun lửa mừng chiến thắng của bạn.",
+    "lore_lose": "Biển Đà Nẵng còn dài. Kiên nhẫn như sóng vỗ bờ, thử lại một lần nữa.",
+    "fun_fact": "Cầu Rồng tại Đà Nẵng là cây cầu dài nhất Việt Nam bắc qua sông Hàn, phun lửa và nước vào cuối tuần.",
+    "ai_level": 2,
+    "region": "nam_trung_bo",
+    "unlock_after": "ninh_binh"
+  },
+  {
+    "province_id": "can_tho",
+    "name": "Cần Thơ",
+    "tagline": "Tây Đô sông nước",
+    "lore_intro": "Trên những chiếc xuồng ba lá tại chợ nổi Cái Răng, người dân chơi ô ăn quan — sỏi là hạt lúa, ô quan là vựa thóc.",
+    "lore_win": "Thần Sông Cửu Long phù hộ! Tây Đô đã thừa nhận tài năng của bạn.",
+    "lore_lose": "Sông Hậu chảy mãi không ngừng. Thử lại — lần này sẽ khác.",
+    "fun_fact": "Chợ nổi Cái Răng được UNESCO công nhận là Di sản Văn hóa phi vật thể cần bảo vệ khẩn cấp.",
+    "ai_level": 3,
+    "region": "dbscl",
+    "unlock_after": "da_nang"
+  }
+]

@@ -1,0 +1,188 @@
+[gd_scene format=3 uid="uid://dg38c3eidss0h"]
+
+[ext_resource type="Script" uid="uid://bfwksavu08bpu" path="res://oanquan_coche/scripts/main.gd" id="1_main"]
+[ext_resource type="Script" uid="uid://dshjaog48cprc" path="res://oanquan_coche/scripts/game/board.gd" id="2_board"]
+[ext_resource type="Script" uid="uid://cirjqr6fo6cf5" path="res://oanquan_coche/scripts/ui/hud.gd" id="3_hud"]
+[ext_resource type="Script" uid="uid://balqp88880s3f" path="res://oanquan_coche/scripts/ui/screen_effects.gd" id="4_fx"]
+[ext_resource type="Script" uid="uid://nx4fqudge7y2" path="res://oanquan_coche/scripts/ui/event_banner.gd" id="5_banner"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_overlay"]
+bg_color = Color(0, 0, 0, 0.75)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[node name="Main" type="Node2D" unique_id=974076884]
+script = ExtResource("1_main")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=970574121]
+position = Vector2(579, 326)
+
+[node name="RoomBG" type="ColorRect" parent="." unique_id=1080371859]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.08, 0.04, 0.01, 1)
+
+[node name="Board" type="Node2D" parent="." unique_id=313984465]
+script = ExtResource("2_board")
+
+[node name="ScreenEffects" type="CanvasLayer" parent="." unique_id=1569846689]
+layer = 10
+
+[node name="FXNode" type="Node2D" parent="ScreenEffects" unique_id=642756798]
+script = ExtResource("4_fx")
+
+[node name="FlashRect" type="ColorRect" parent="ScreenEffects" unique_id=1862920855]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 8.0
+offset_right = 4.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 1, 1, 0)
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=693121274]
+script = ExtResource("3_hud")
+
+[node name="ScoreContainer" type="HBoxContainer" parent="HUD" unique_id=2059091836]
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 8.0
+offset_bottom = 56.0
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="LblP1" type="Label" parent="HUD/ScoreContainer" unique_id=385823837]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.95, 0.75, 0.35, 1)
+theme_override_font_sizes/font_size = 26
+text = "AI: 0"
+
+[node name="P1Delta" type="Label" parent="HUD/ScoreContainer" unique_id=237084785]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.5, 0.9, 0.5, 1)
+theme_override_font_sizes/font_size = 18
+
+[node name="LblP0" type="Label" parent="HUD/ScoreContainer" unique_id=1011402446]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.55, 0.9, 0.55, 1)
+theme_override_font_sizes/font_size = 26
+text = "Bạn: 0"
+horizontal_alignment = 2
+
+[node name="P0Delta" type="Label" parent="HUD/ScoreContainer" unique_id=1221255472]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.5, 0.9, 0.5, 1)
+theme_override_font_sizes/font_size = 18
+horizontal_alignment = 2
+
+[node name="LblTurn" type="Label" parent="HUD" unique_id=943098881]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -200.0
+offset_top = 56.0
+offset_right = 200.0
+offset_bottom = 90.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 20
+text = "Lượt: Bạn — Chọn ô"
+horizontal_alignment = 1
+
+[node name="TimerIcon" type="Label" parent="HUD" unique_id=146493021]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 240.0
+offset_top = 92.0
+offset_right = 280.0
+offset_bottom = 138.0
+theme_override_colors/font_color = Color(1, 1, 1, 0.85)
+theme_override_font_sizes/font_size = 30
+text = "⌛"
+horizontal_alignment = 1
+
+[node name="TimerBar" type="ProgressBar" parent="HUD" unique_id=1347195673]
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 92.0
+offset_bottom = 106.0
+max_value = 15.0
+value = 15.0
+show_percentage = false
+
+[node name="GameOverOverlay" type="Control" parent="HUD" unique_id=43240904]
+visible = false
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -160.0
+offset_right = 200.0
+offset_bottom = 160.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BG" type="Panel" parent="HUD/GameOverOverlay" unique_id=2089133496]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_overlay")
+
+[node name="LblResult" type="Label" parent="HUD/GameOverOverlay" unique_id=1074609436]
+layout_mode = 0
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -180.0
+offset_top = 30.0
+offset_right = 180.0
+offset_bottom = 80.0
+theme_override_colors/font_color = Color(1, 1, 0.4, 1)
+theme_override_font_sizes/font_size = 38
+text = "Kết quả"
+horizontal_alignment = 1
+
+[node name="LblScores" type="Label" parent="HUD/GameOverOverlay" unique_id=1561690745]
+layout_mode = 0
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -180.0
+offset_top = 85.0
+offset_right = 180.0
+offset_bottom = 130.0
+theme_override_colors/font_color = Color(0.9, 0.9, 0.9, 1)
+theme_override_font_sizes/font_size = 28
+text = "0 — 0"
+horizontal_alignment = 1
+
+[node name="BtnRestart" type="Button" parent="HUD/GameOverOverlay" unique_id=1979341]
+layout_mode = 0
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -120.0
+offset_top = -70.0
+offset_right = 120.0
+offset_bottom = -22.0
+theme_override_font_sizes/font_size = 24
+text = "Chơi lại"
+
+[node name="EventBannerLayer" type="CanvasLayer" parent="." unique_id=566798437]
+layer = 8
+script = ExtResource("5_banner")

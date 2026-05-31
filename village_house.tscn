@@ -1,0 +1,125 @@
+[gd_scene format=3 uid="uid://bkgocu3t18q61"]
+
+[ext_resource type="Texture2D" uid="uid://pgj3x36ltlfk" path="res://assets/new/npc/ChatGPT_Image_May_31__2026__01_40_36_PM-removebg-preview.png" id="1_1ux4o"]
+[ext_resource type="Script" uid="uid://bpq1sth7tyf8m" path="res://village_house.gd" id="1_m7awp"]
+[ext_resource type="Script" uid="uid://bej4drqynues2" path="res://panel_container.gd" id="2_g3pb4"]
+[ext_resource type="Script" uid="uid://c0gbdp046euka" path="res://chair.gd" id="3_n6ngu"]
+[ext_resource type="Script" uid="uid://b0yle64r6oa0m" path="res://anh.gd" id="4_oy5d0"]
+[ext_resource type="Script" uid="uid://eevqrjs45w4j" path="res://lu.gd" id="5_gn8ao"]
+[ext_resource type="Script" uid="uid://br7t3a31aaixr" path="res://chieu.gd" id="6_1xf1g"]
+[ext_resource type="Script" uid="uid://dj1x2ytj01u22" path="res://letter.gd" id="7_oaidw"]
+[ext_resource type="PackedScene" uid="uid://vkfb4v83yiu1" path="res://lan_anh.tscn" id="9_cmqtv"]
+[ext_resource type="PackedScene" uid="uid://fxycegkphpyp" path="res://tinh.tscn" id="10_cxdgi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g3pb4"]
+size = Vector2(78, 46)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m7awp"]
+size = Vector2(120.5, 62)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n6ngu"]
+size = Vector2(72.25, 42.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oy5d0"]
+size = Vector2(230, 179)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gn8ao"]
+size = Vector2(29.25, 41)
+
+[node name="village_house" type="Node2D" unique_id=188081678]
+script = ExtResource("1_m7awp")
+
+[node name="ChatGptImageMay312026014036PmRemovebgPreview" type="Sprite2D" parent="." unique_id=1157761238]
+position = Vector2(599.375, 364.87497)
+scale = Vector2(2.0506933, 1.6818706)
+texture = ExtResource("1_1ux4o")
+
+[node name="chair" type="Area2D" parent="." unique_id=2035695167]
+script = ExtResource("3_n6ngu")
+item_name = "chair"
+item_description = "cái ghế đó"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="chair" unique_id=626973525]
+position = Vector2(607, 366)
+shape = SubResource("RectangleShape2D_g3pb4")
+
+[node name="picture" type="Area2D" parent="." unique_id=386058788]
+script = ExtResource("4_oy5d0")
+item_name = "picture"
+item_description = "ảnh của ba má m"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="picture" unique_id=2126583088]
+position = Vector2(597.75, 120)
+shape = SubResource("RectangleShape2D_m7awp")
+
+[node name="lu" type="Area2D" parent="." unique_id=252932706]
+script = ExtResource("5_gn8ao")
+item_name = "lu"
+item_description = "lư hương của ng việt"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="lu" unique_id=1856091121]
+position = Vector2(601.875, 175.875)
+shape = SubResource("RectangleShape2D_n6ngu")
+
+[node name="chieu" type="Area2D" parent="." unique_id=348462886]
+script = ExtResource("6_1xf1g")
+item_name = "chiếu"
+item_description = "là cái ng việt dùng như ga trải dường"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="chieu" unique_id=239139856]
+position = Vector2(867, 441.5)
+shape = SubResource("RectangleShape2D_oy5d0")
+
+[node name="letter" type="Area2D" parent="." unique_id=1060403328]
+script = ExtResource("7_oaidw")
+item_name = "letture"
+item_description = "bức thư mà mẹ để lại cho tín"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="letter" unique_id=64048381]
+position = Vector2(501.375, 376)
+shape = SubResource("RectangleShape2D_gn8ao")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=608974332]
+
+[node name="InfoPanel" type="PanelContainer" parent="CanvasLayer" unique_id=767800611]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -62.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("2_g3pb4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/InfoPanel" unique_id=1598200565]
+layout_mode = 2
+
+[node name="ItemNameLabel" type="Label" parent="CanvasLayer/InfoPanel/VBoxContainer" unique_id=504700052]
+layout_mode = 2
+
+[node name="ItemDescLabel" type="Label" parent="CanvasLayer/InfoPanel/VBoxContainer" unique_id=538316395]
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="CanvasLayer/InfoPanel/VBoxContainer" unique_id=1412379595]
+layout_mode = 2
+
+[node name="lan_anh" parent="." unique_id=366225834 instance=ExtResource("9_cmqtv")]
+position = Vector2(356, 542)
+
+[node name="tinh" parent="." unique_id=1698603003 instance=ExtResource("10_cxdgi")]
+position = Vector2(426, 528)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=511151956]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=1330506205]
+position = Vector2(341, 262)
+polygon = PackedVector2Array(-5, -4, -72, 13, -153, 7, -155, 36, -125, 35, -82, 58, -82, 97, -95, 153, -131, 141, -155, 137, -152, 186, -146, 244, -144, 287, -122, 299, -132, 320, -129, 347, -90, 366, -13, 371, 42, 373, 90, 373, 137, 374, 141, 374, 146, 374, 199, 372, 227, 369, 267, 367, 325, 364, 367, 364, 377, 364, 421, 366, 540, 360, 545, 361, 575, 359, 582, 351, 582, 349, 575, 322, 569, 295, 579, 260, 601, 255, 638, 259, 646, 236, 640, 175, 632, 107, 638, 84, 638, 75, 614, 11, 615, -3, 554, -7, 508, -8, 447, -4, 440, 2, 429, 18, 409, 23, 368, 26, 339, 2, 287, -2, 226, 8, 132, -9, 106, -9, 79, -5, 63, -4, 55, -27, 61, -71, 68, -139, 78, -227, 130, -239, 231, -231, 317, -237, 476, -241, 623, -234, 708, -230, 766, -214, 791, -195, 840, 145, 841, 248, 841, 418, 734, 445, 467, 431, 285, 450, 112, 450, -28, 445, -224, 442, -298, 428, -357, 401, -362, 241, -347, 108, -344, 17, -335, -52, -321, -124, -315, -161, -245, -204, -102, -218, 41, -214, 31, -138)
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=1459459715]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D2" unique_id=1888320079]
+position = Vector2(329, 327)
+polygon = PackedVector2Array(8, -4, 86, -4, 211, -1, 216, 82, 216, 124, 187, 130, 173, 112, 47, 113, 33, 129, -6, 132, 1, 92)

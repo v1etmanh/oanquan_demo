@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://clocf8yg6lejj" path="res://young_boy.tscn" id="11_qvv1m"]
 [ext_resource type="PackedScene" uid="uid://cj2bd84ph24bt" path="res://young_girl.tscn" id="12_jpnk7"]
 [ext_resource type="Script" uid="uid://c82adtsyqdap3" path="res://dialog_ui.gd" id="13_dialui"]
+[ext_resource type="Script" uid="uid://gy7k0vldd0lk" path="res://door_trigger.gd" id="14_i2c7c"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6t5gs"]
 texture = ExtResource("1_qyljj")
@@ -6050,6 +6051,9 @@ texture = ExtResource("1_qyljj")
 [sub_resource type="TileSet" id="TileSet_efnqa"]
 sources/0 = SubResource("TileSetAtlasSource_6t5gs")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lohkk"]
+size = Vector2(39, 30)
+
 [node name="village" type="Node2D" unique_id=308122245]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=771677246]
@@ -6061,10 +6065,10 @@ scale = Vector2(2.0662982, 1.9447514)
 texture = ExtResource("2_jak2h")
 
 [node name="lan_anh" parent="." unique_id=366225834 instance=ExtResource("3_wybox")]
-position = Vector2(1516, 994)
+position = Vector2(1570, 964)
 
 [node name="tinh" parent="." unique_id=1698603003 instance=ExtResource("3_qyljj")]
-position = Vector2(1566, 1065)
+position = Vector2(1496, 1042)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2102926906]
 visible = false
@@ -6081,7 +6085,6 @@ position = Vector2(726, 512)
 polygon = PackedVector2Array(1, -1, 46, -95, 45, -128, 18, -150, -20, -161, -43, -158, -82, -159, -180, -180, -253, -186, -292, -160, -306, -132, -307, -115, -313, -93, -333, -76, -344, -32, -333, -18, -299, -13, -252, -7, -243, -30, -239, -65, -205, -92, -188, -114, -173, -111, -167, -87, -142, -82, -108, -76, -120, -45, -140, -37, -178, -38, -186, -11, -183, -3, -120, 4, -64, 5)
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="." unique_id=2121107764]
-visible = false
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D3" unique_id=470953202]
 position = Vector2(589, 200)
@@ -6221,6 +6224,7 @@ position = Vector2(1322, 1442)
 polygon = PackedVector2Array(1, -3, 7, -56, 70, -53, 242, -47, 263, 9, 280, 47, 260, 91, 253, 149, 262, 211, 246, 246, 200, 270, 155, 283, 132, 264, 108, 249, 103, 228, 100, 209, 85, 205, 75, 197, 52, 202, 29, 224, 28, 244, 8, 250, -26, 258, -55, 268, -54, 305, -95, 298, -119, 301, -142, 274, -129, 236, -99, 148, -85, 84, -62, 50, -23, 46)
 
 [node name="StaticBody2D23" type="StaticBody2D" parent="." unique_id=143657441]
+visible = false
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D23" unique_id=839651299]
 position = Vector2(1719, 1496)
@@ -6234,6 +6238,7 @@ position = Vector2(2075, 1556)
 polygon = PackedVector2Array(-14, 7, 90, -10, 212, -3, 316, 9, 358, 6, 363, 58, 345, 90, 325, 115, 339, 128, 325, 175, 340, 196, 378, 191, 389, 146, 439, 130, 449, 37, 499, 11, 608, 32, 686, 40, 693, 104, 677, 180, 594, 227, 517, 218, 370, 267, 335, 320, 275, 379, 136, 396, 62, 362, -19, 331, -31, 324, -161, 352, -215, 350, -258, 322, -253, 282, -158, 303, -68, 289, -30, 277, -28, 222, -28, 163, -11, 75)
 
 [node name="StaticBody2D25" type="StaticBody2D" parent="." unique_id=773722844]
+visible = false
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D25" unique_id=1480179635]
 position = Vector2(2907, 1608)
@@ -6247,6 +6252,7 @@ position = Vector2(1374, 1844)
 polygon = PackedVector2Array(-13, 7, 79, -42, 173, -63, 288, -21, 350, 20, 279, 39, 134, 66, 67, 149, 76, 202, 150, 239, 51, 269, -41, 257, -96, 257, -78, 223, -43, 195, -27, 135, -25, 92)
 
 [node name="StaticBody2D27" type="StaticBody2D" parent="." unique_id=1331468654]
+visible = false
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D27" unique_id=1874499188]
 position = Vector2(619, 1466)
@@ -6361,7 +6367,8 @@ theme_override_font_sizes/font_size = 16
 text = "NPC"
 
 [node name="DialogText" type="RichTextLabel" parent="DialogUI/Panel" unique_id=1640785748]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 16.0
@@ -6385,3 +6392,15 @@ offset_top = -48.0
 offset_right = -8.0
 offset_bottom = -8.0
 text = "Tiếp ▶"
+
+[node name="DoorTrigger" type="Area2D" parent="." unique_id=1558588602]
+position = Vector2(869, 286)
+script = ExtResource("14_i2c7c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DoorTrigger" unique_id=1637567954]
+position = Vector2(25.5, -22)
+shape = SubResource("RectangleShape2D_lohkk")
+
+[node name="PromptLabel" type="Label" parent="DoorTrigger" unique_id=1643683730]
+offset_right = 40.0
+offset_bottom = 23.0
