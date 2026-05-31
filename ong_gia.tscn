@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dbx7w0kf2gm1k"]
 
 [ext_resource type="Texture2D" uid="uid://dr73aqfpcp82n" path="res://assets/new/npc/ChatGPT_Image_May_31__2026__09_41_17_AM-removebg-preview.png" id="1_kxwai"]
+[ext_resource type="Script" uid="uid://dhgybpmi2qmws" path="res://npc_static.gd" id="1_xbaq1"]
 [ext_resource type="Texture2D" uid="uid://cacytijksod8e" path="res://assets/new/npc/ChatGPT_Image_May_31__2026__09_08_18_AM-removebg-preview.png" id="2_xbaq1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3cipr"]
@@ -76,12 +77,14 @@ animations = [{
 }]
 
 [node name="NPC" type="CharacterBody2D" unique_id=1014502864]
+script = ExtResource("1_xbaq1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=503207513]
 position = Vector2(4, 73)
 shape = SubResource("CircleShape2D_3cipr")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1268915441]
+position = Vector2(0, -2)
 sprite_frames = SubResource("SpriteFrames_i10g1")
 animation = &"idle"
-frame_progress = 0.3101055
+frame_progress = 0.924732

@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://cn7dgvdbbcx8q"]
 
+[ext_resource type="Script" uid="uid://dhgybpmi2qmws" path="res://npc_static.gd" id="1_1lk1j"]
 [ext_resource type="Texture2D" uid="uid://cphwyrh630npp" path="res://assets/new/npc/ChatGPT_Image_May_31__2026__09_30_40_AM-removebg-preview.png" id="1_k2vex"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1lk1j"]
@@ -41,6 +42,7 @@ animations = [{
 }]
 
 [node name="oanquanboy" type="CharacterBody2D" unique_id=75770196]
+script = ExtResource("1_1lk1j")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=384871004]
 shape = SubResource("CircleShape2D_1lk1j")
@@ -48,4 +50,4 @@ shape = SubResource("CircleShape2D_1lk1j")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=343446096]
 sprite_frames = SubResource("SpriteFrames_frox6")
 animation = &"idle"
-frame_progress = 0.71805364
+frame_progress = 0.9745118
