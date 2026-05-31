@@ -23,6 +23,10 @@ run={
 ]
 }
 
+[autoload]
+
+DialogManager="*res://dialog_manager.gd"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

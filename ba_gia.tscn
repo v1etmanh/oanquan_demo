@@ -76,6 +76,9 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_qp18d"]
 radius = 35.057095
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_detect"]
+radius = 80.0
+
 [node name="Ba_gia" type="CharacterBody2D" unique_id=78865596]
 script = ExtResource("1_vgs2m")
 
@@ -87,3 +90,12 @@ frame_progress = 0.7276888
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=258877618]
 position = Vector2(-5, 31)
 shape = SubResource("CircleShape2D_qp18d")
+
+[node name="DetectArea" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 1
+monitoring = true
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectArea"]
+shape = SubResource("CircleShape2D_detect")

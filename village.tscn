@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://cn7dgvdbbcx8q" path="res://oanquanboy.tscn" id="10_7l7ft"]
 [ext_resource type="PackedScene" uid="uid://clocf8yg6lejj" path="res://young_boy.tscn" id="11_qvv1m"]
 [ext_resource type="PackedScene" uid="uid://cj2bd84ph24bt" path="res://young_girl.tscn" id="12_jpnk7"]
+[ext_resource type="Script" uid="uid://c82adtsyqdap3" path="res://dialog_ui.gd" id="13_dialui"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6t5gs"]
 texture = ExtResource("1_qyljj")
@@ -6060,10 +6061,10 @@ scale = Vector2(2.0662982, 1.9447514)
 texture = ExtResource("2_jak2h")
 
 [node name="lan_anh" parent="." unique_id=366225834 instance=ExtResource("3_wybox")]
-position = Vector2(304, 1625)
+position = Vector2(1516, 994)
 
 [node name="tinh" parent="." unique_id=1698603003 instance=ExtResource("3_qyljj")]
-position = Vector2(353, 1632)
+position = Vector2(1566, 1065)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2102926906]
 visible = false
@@ -6332,7 +6333,55 @@ position = Vector2(1215, 1434)
 scale = Vector2(0.5, 0.5)
 
 [node name="npc_nu2" parent="." unique_id=659341804 instance=ExtResource("6_83oyx")]
-position = Vector2(912, 716)
+position = Vector2(912, 713)
 
 [node name="npc_nu3" parent="." unique_id=1781063091 instance=ExtResource("6_83oyx")]
 position = Vector2(400, 838)
+
+[node name="DialogUI" type="CanvasLayer" parent="." unique_id=958935095]
+layer = 10
+script = ExtResource("13_dialui")
+
+[node name="Panel" type="Panel" parent="DialogUI" unique_id=1637311590]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -160.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="SpeakerLabel" type="Label" parent="DialogUI/Panel" unique_id=93567702]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 8.0
+offset_right = 300.0
+offset_bottom = 36.0
+theme_override_font_sizes/font_size = 16
+text = "NPC"
+
+[node name="DialogText" type="RichTextLabel" parent="DialogUI/Panel" unique_id=1640785748]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 40.0
+offset_right = -130.0
+offset_bottom = -12.0
+grow_horizontal = 2
+grow_vertical = 2
+bbcode_enabled = true
+scroll_active = false
+
+[node name="NextButton" type="Button" parent="DialogUI/Panel" unique_id=1846004034]
+visible = false
+layout_mode = 0
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -110.0
+offset_top = -48.0
+offset_right = -8.0
+offset_bottom = -8.0
+text = "Tiếp ▶"

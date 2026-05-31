@@ -89,7 +89,7 @@ func _start_wander() -> void:
 	_wander_target = _lan_anh.global_position + Vector2(cos(angle) * dist, sin(angle) * dist * 0.5)
 	_state = State.WANDERING
 
-func _do_wander(delta: float) -> void:
+func _do_wander(_delta: float) -> void:
 	var diff := _wander_target - global_position
 	if diff.length() < APPROACH_THRESHOLD:
 		# Đến nơi → đứng idle ngắn rồi quay orbit

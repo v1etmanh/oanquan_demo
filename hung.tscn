@@ -75,6 +75,9 @@ animations = [{
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tsvmg"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_detect"]
+radius = 80.0
+
 [node name="hung" type="CharacterBody2D" unique_id=867904274]
 script = ExtResource("1_eciyg")
 
@@ -85,3 +88,12 @@ frame_progress = 0.068014555
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1831997918]
 shape = SubResource("CircleShape2D_tsvmg")
+
+[node name="DetectArea" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 1
+monitoring = true
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectArea"]
+shape = SubResource("CircleShape2D_detect")

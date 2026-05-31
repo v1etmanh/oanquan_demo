@@ -5,6 +5,9 @@
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1lk1j"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_detect"]
+radius = 80.0
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_x67fw"]
 atlas = ExtResource("1_k2vex")
 region = Rect2(12, 0, 213, 288)
@@ -51,3 +54,12 @@ shape = SubResource("CircleShape2D_1lk1j")
 sprite_frames = SubResource("SpriteFrames_frox6")
 animation = &"idle"
 frame_progress = 0.9745118
+
+[node name="DetectArea" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 1
+monitoring = true
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectArea"]
+shape = SubResource("CircleShape2D_detect")

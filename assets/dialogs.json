@@ -1,0 +1,406 @@
+{
+  "_meta": {
+    "game": "Du Lạc — Tập 01: Tuổi Thơ",
+    "version": "1.0",
+    "encoding": "UTF-8",
+    "structure": "npc_id → array of sessions → array of lines",
+    "session": "Mỗi lần gặp NPC tăng 1 session. Session cuối lặp lại mãi.",
+    "speaker_key": "speaker = npc_id nói | 'lan_anh' = player nói | 'action' = mô tả hành động"
+  },
+
+  "ong_nhieu": {
+    "display_name": "Ông Nhiêu",
+    "location": "Cổng làng",
+    "sessions": [
+      {
+        "id": 0,
+        "context": "Ngày 1 sáng — Cổng làng. Lần đầu gặp. Ông nhận ra Tính qua đôi mắt.",
+        "lines": [
+          { "speaker": "ong_nhieu", "text": "Thằng Tính đấy à? Trời ơi…" },
+          { "speaker": "ong_nhieu", "text": "Tao nhận ra mày qua đôi mắt. Đôi mắt mày giống bà Ngần như đúc." },
+          { "speaker": "lan_anh",   "text": "Dạ… cháu là Lan Anh. Cháu đưa anh Tính về thăm làng ạ." },
+          { "speaker": "ong_nhieu", "text": "Lan Anh… cái tên nghe quen. Mày với thằng Tính quen nhau từ hồi nào?" },
+          { "speaker": "lan_anh",   "text": "Từ hồi nhỏ ạ. Nhưng lâu rồi cháu không liên lạc được." },
+          { "speaker": "ong_nhieu", "text": "Ừ thôi. Vào làng đi. Đừng đứng đây mãi — nắng lên rồi đấy." }
+        ]
+      },
+      {
+        "id": 1,
+        "context": "Ngày 1 chiều — Sau khi Lan Anh tìm được chiếc vòng rơm từ bà Tư.",
+        "lines": [
+          { "speaker": "lan_anh",   "text": "Ông ơi, cháu vừa lấy được chiếc vòng từ bà Tư. Ông có biết vòng này không ạ?" },
+          { "speaker": "ong_nhieu", "text": "Cái vòng đó… bà Ngần đan đấy." },
+          { "speaker": "ong_nhieu", "text": "Bà nói với tao: 'Thằng Tính cần biết nó từ đâu đến, nhưng đừng nói vội — đợi khi nào nó đủ lớn để hiểu.'" },
+          { "speaker": "ong_nhieu", "text": "Mà giờ nó chưa đủ lớn thật." },
+          { "speaker": "action",    "text": "(Ông Nhiêu liếc nhìn Tính đang đuổi theo con bướm gần hàng tre)" },
+          { "speaker": "lan_anh",   "text": "Ông có thể kể thêm về bà Ngần không ạ? Về gốc gác của anh Tính?" },
+          { "speaker": "ong_nhieu", "text": "Cô muốn nghe thêm không? Vậy thì đánh một ván Ô Ăn Quan với tao đã. Tao già rồi, ít người chịu chơi lắm." }
+        ]
+      },
+      {
+        "id": 2,
+        "context": "Ngày 1 chiều — Sau ván Ô Ăn Quan. Ông kể bí mật nguồn gốc Tính.",
+        "lines": [
+          { "speaker": "ong_nhieu", "text": "Tao kể cho cô nghe." },
+          { "speaker": "ong_nhieu", "text": "Bà Ngần không phải người làng này. Bà từ nơi khác đến, tay bồng một đứa trẻ sơ sinh, nói là con của người thân gửi nhờ." },
+          { "speaker": "ong_nhieu", "text": "Rồi bà ở lại đây luôn. Nuôi thằng Tính đến năm 15 tuổi thì bà mất." },
+          { "speaker": "lan_anh",   "text": "Không ai biết bố mẹ ruột của anh Tính là ai sao ông?" },
+          { "speaker": "ong_nhieu", "text": "Không ai biết. Bà Ngần chưa bao giờ kể. Có lẽ bà cũng không biết hết." },
+          { "speaker": "ong_nhieu", "text": "Trước khi mất bà nói với tao một câu — 'Thằng bé này có một chỗ thuộc về nó. Khi nào nó nhớ ra, nó sẽ tìm về được.'" },
+          { "speaker": "ong_nhieu", "text": "Tao không hiểu câu đó. Nhưng tao nhớ hoài." }
+        ]
+      },
+      {
+        "id": 3,
+        "context": "Ngày 3 — Hội làng. Ông gặp Lan Anh và mời Tính tham gia thi Ô Ăn Quan.",
+        "lines": [
+          { "speaker": "ong_nhieu", "text": "Hội làng năm nào cũng có giải Ô Ăn Quan." },
+          { "speaker": "ong_nhieu", "text": "Ngày xưa thằng Tính vô địch ba năm liền đấy. Cả làng còn nhắc." },
+          { "speaker": "lan_anh",   "text": "Thật ạ? Cháu không biết anh Tính giỏi Ô Ăn Quan vậy." },
+          { "speaker": "ong_nhieu", "text": "Giỏi lắm. Tay nó đi quân nhanh mà chuẩn. Hồi lớp 5 tao thua nó mà vui hơn thắng." },
+          { "speaker": "ong_nhieu", "text": "Năm nay cô cho nó tham gia đi. Dù sao… thì cũng để làng nhớ mặt nó một lần." },
+          { "speaker": "action",    "text": "(Ông Nhiêu mắt đỏ hoe, quay đi nhìn chỗ khác)" }
+        ]
+      },
+      {
+        "id": 4,
+        "context": "Ngày 3 đêm — Sau khi Tính thắng hội Ô Ăn Quan. Ông gật đầu từ biệt.",
+        "lines": [
+          { "speaker": "ong_nhieu", "text": "Tao biết nó vẫn còn đó. Thứ gì đó bên trong nó — vẫn còn." },
+          { "speaker": "lan_anh",   "text": "Cháu cũng nghĩ vậy ông ạ." },
+          { "speaker": "ong_nhieu", "text": "Bà Ngần nói đúng rồi. Nó đã tìm về được." },
+          { "speaker": "action",    "text": "(Ông Nhiêu đứng dậy, dừng lại nhìn Tính một giây, rồi khẽ gật đầu và bước đi)" }
+        ]
+      }
+    ]
+  },
+
+  "ba_tu": {
+    "display_name": "Bà Tư",
+    "location": "Hiên nhà đầu xóm",
+    "sessions": [
+      {
+        "id": 0,
+        "context": "Ngày 1 — Lần đầu Lan Anh tìm đến theo chỉ dẫn của Minh.",
+        "lines": [
+          { "speaker": "action",  "text": "(Bà Tư đang ngồi phơi nắng trước hiên. Thấy Tính, bà khóc không thành tiếng)" },
+          { "speaker": "ba_tu",  "text": "Ối trời ơi… Tính đấy à con?" },
+          { "speaker": "ba_tu",  "text": "Bà nhìn con… nhìn hoài mà không dám chắc. Con lớn vậy rồi à." },
+          { "speaker": "lan_anh","text": "Dạ thưa bà, cháu là Lan Anh. Cháu đưa anh Tính về thăm làng ạ." },
+          { "speaker": "ba_tu",  "text": "Con về rồi. Bà chờ lâu lắm rồi con ơi." },
+          { "speaker": "action",  "text": "(Tính đứng yên. Ánh mắt nhìn bà Tư — trống rỗng nhưng không xa cách)" }
+        ]
+      },
+      {
+        "id": 1,
+        "context": "Ngày 1 — Bà Tư trao chiếc vòng rơm mà bà Ngần gửi lại trước khi mất.",
+        "lines": [
+          { "speaker": "ba_tu",  "text": "Bà Ngần dặn tao: 'Khi nào thằng Tính quay về thì đưa cho nó.' Tao giữ mãi đây rồi con ơi." },
+          { "speaker": "action",  "text": "(Bà lấy từ trong túi vải cũ ra một chiếc vòng đan bằng rơm, đã sờn và ố vàng, buộc thêm một sợi chỉ đỏ mảnh)" },
+          { "speaker": "lan_anh","text": "Bà Ngần để lại chiếc vòng này cho anh Tính ạ?" },
+          { "speaker": "ba_tu",  "text": "Bà Ngần thương con lắm. Bà không muốn con lớn lên mà không có gì của bà để lại." },
+          { "speaker": "ba_tu",  "text": "Con cầm đi. Đó là của con." },
+          { "speaker": "action",  "text": "(Tính nhìn chiếc vòng. Im lặng. Rồi chậm rãi đưa tay ra đón)" }
+        ]
+      },
+      {
+        "id": 2,
+        "context": "Ngày 2 — Bà Tư kể về bà Ngần và câu chuyện con rùa thần.",
+        "lines": [
+          { "speaker": "ba_tu",  "text": "Bà Ngần hiền lắm. Cả đời bà chỉ lo cho mỗi thằng Tính. Chưa bao giờ than một câu." },
+          { "speaker": "lan_anh","text": "Bà Ngần có kể gì về quá khứ của anh Tính không bà?" },
+          { "speaker": "ba_tu",  "text": "Hồi Tính còn nhỏ, mỗi tối bà đều kể chuyện con rùa thần. Kể đi kể lại hoài." },
+          { "speaker": "ba_tu",  "text": "Bà bảo: rùa không nhanh, nhưng rùa không bỏ đi. Rùa là kẻ ở lại." },
+          { "speaker": "ba_tu",  "text": "Thằng Tính thích câu đó lắm. Nó hay lẩm bẩm lại suốt, cứ như là bùa chú vậy." },
+          { "speaker": "lan_anh","text": "Kẻ ở lại…" },
+          { "speaker": "action",  "text": "(Lan Anh ghi vào sổ tay. Tay run nhẹ)" }
+        ]
+      },
+      {
+        "id": 3,
+        "context": "Ngày 3 đêm — Bà Tư ngồi nhìn Tính từ xa dưới gốc đa.",
+        "lines": [
+          { "speaker": "ba_tu",  "text": "Nhìn nó ngồi dưới gốc đa kia, bà nhớ hồi nó còn nhỏ lắm." },
+          { "speaker": "ba_tu",  "text": "Tối nào bà Ngần cũng dắt nó ra đây ngồi bắt đom đóm." },
+          { "speaker": "lan_anh","text": "Anh ấy hay ra đây lắm à bà?" },
+          { "speaker": "ba_tu",  "text": "Hay lắm. Nó nói đom đóm là đèn của trời, thắp lên để người ta không sợ tối." },
+          { "speaker": "ba_tu",  "text": "Đứa trẻ mà nói vậy… bà Ngần vừa cười vừa khóc." }
+        ]
+      }
+    ]
+  },
+
+  "minh": {
+    "display_name": "Minh",
+    "location": "Quán nước đầu làng",
+    "sessions": [
+      {
+        "id": 0,
+        "context": "Ngày 1 sáng — Quán nước. Minh thấy Tính, đứng sững, tay hơi run khi rót trà.",
+        "lines": [
+          { "speaker": "action",  "text": "(Minh đang lau bàn, thấy hai người thì đứng sững. Nhìn Tính một lúc rồi quay mặt đi)" },
+          { "speaker": "minh",   "text": "Ngồi đi chị. Để tôi pha trà." },
+          { "speaker": "action",  "text": "(Rót trà, tay hơi run)" },
+          { "speaker": "minh",   "text": "Hồi nhỏ thằng Tính hay ngồi đây lắm. Nhà nó ở cuối xóm — cái nhà tranh nhỏ, gần gốc sung." },
+          { "speaker": "lan_anh","text": "Anh Minh quen anh Tính từ hồi nhỏ à?" },
+          { "speaker": "minh",   "text": "Từ hồi còn bé. Tụi tôi hay chơi chung. Mà nó… nó ít nói hơn bọn tôi." },
+          { "speaker": "minh",   "text": "Bà Ngần nuôi nó từ lúc mấy tháng tuổi. Không ai biết bố mẹ ruột nó là ai." }
+        ]
+      },
+      {
+        "id": 1,
+        "context": "Ngày 1 chiều — Minh kể về kỷ vật bà Ngần gửi lại, chỉ Lan Anh sang bà Tư.",
+        "lines": [
+          { "speaker": "lan_anh","text": "Anh Minh ơi, bà Ngần trước khi mất có để lại gì cho anh Tính không?" },
+          { "speaker": "minh",   "text": "Bà Ngần mất năm Tính 15 tuổi. Trước khi mất bà có gửi lại một cái gì đó." },
+          { "speaker": "minh",   "text": "Tôi không biết là gì. Nghe bảo bà Tư đầu xóm giữ hộ từ đó đến giờ." },
+          { "speaker": "minh",   "text": "Chị cứ sang hỏi bà Tư đi. Bà vẫn còn nhớ chắc." }
+        ]
+      },
+      {
+        "id": 2,
+        "context": "Ngày 2 — Minh nhắc Tính chuyện cũ về Ô Ăn Quan, khiến Tính đứng dậy tự bước về phía chiếu.",
+        "lines": [
+          { "speaker": "action",  "text": "(Minh ngồi xuống cạnh Tính, giọng bình thường như đang kể chuyện thường)" },
+          { "speaker": "minh",   "text": "Này Tính, mày nhớ không — hồi lớp 5 mày thắng ông Nhiêu ván Ô Ăn Quan, cả làng vỗ tay." },
+          { "speaker": "minh",   "text": "Mày khóc vì sung sướng quá. Xấu hổ vãi." },
+          { "speaker": "lan_anh","text": "Anh Tính giỏi Ô Ăn Quan vậy hả anh Minh?" },
+          { "speaker": "minh",   "text": "Giỏi nhất xóm hồi đó. Ông Nhiêu tự hào về nó lắm, dù ông thua." },
+          { "speaker": "action",  "text": "(Tính không nói gì. Nhưng đứng dậy, bước về phía chiếu Ô Ăn Quan — chậm rãi, chắc chắn)" }
+        ]
+      },
+      {
+        "id": 3,
+        "context": "Ngày 3 đêm — Sau khi Tính thắng hội làng. Minh đấm nhẹ vai Tính.",
+        "lines": [
+          { "speaker": "minh",   "text": "Tao không ngờ mày còn nhớ cách chơi." },
+          { "speaker": "minh",   "text": "Bàn tay đi quân y như hồi nhỏ vậy. Tao nhận ra ngay." },
+          { "speaker": "lan_anh","text": "Anh Minh…" },
+          { "speaker": "minh",   "text": "Ờ không sao. Tốt rồi." },
+          { "speaker": "action",  "text": "(Minh đấm nhẹ vai Tính. Không nói thêm. Quay đi trước khi ai thấy mắt anh đỏ)" }
+        ]
+      }
+    ]
+  },
+
+  "hung": {
+    "display_name": "Hùng",
+    "location": "Xưởng đan lát cuối làng",
+    "sessions": [
+      {
+        "id": 0,
+        "context": "Ngày 1 — Hùng đang đan rổ. Thấy Tính, đứng dậy, chỉ vỗ vai — không nói gì ngay.",
+        "lines": [
+          { "speaker": "action",  "text": "(Hùng đang ngồi đan một cái rổ, tay thoăn thoắt. Thấy Tính, anh đứng dậy — chỉ vỗ nhẹ vai, không nói gì)" },
+          { "speaker": "hung",   "text": "…" },
+          { "speaker": "lan_anh","text": "Anh Hùng quen anh Tính à?" },
+          { "speaker": "hung",   "text": "Quen. Hồi nhỏ." },
+          { "speaker": "hung",   "text": "Thằng Tính hay chạy ra đây ngồi xem tôi đan. Nó bảo thích mùi cói." },
+          { "speaker": "hung",   "text": "Tôi nghĩ nó chạy ra đây vì ở nhà một mình buồn thôi." }
+        ]
+      },
+      {
+        "id": 1,
+        "context": "Ngày 1 chiều — Hùng kể về chiếc vòng cói đã đan sẵn để chờ Tính về.",
+        "lines": [
+          { "speaker": "hung",   "text": "Vòng tay bằng cói — tôi đan cho nó một cái hồi lên 7." },
+          { "speaker": "hung",   "text": "Nó đeo đến sờn mới chịu bỏ. Không biết còn không." },
+          { "speaker": "lan_anh","text": "Anh còn nhớ chi tiết vậy?" },
+          { "speaker": "hung",   "text": "Người ta nhớ những thứ mình tự tay làm ra." },
+          { "speaker": "hung",   "text": "Tôi đan cho nó cái mới rồi. Để đó. Phòng khi nó nhớ mà quay về." }
+        ]
+      },
+      {
+        "id": 2,
+        "context": "Ngày 2 — Hùng kể Tính hay ra giếng và bờ ao khi còn nhỏ.",
+        "lines": [
+          { "speaker": "lan_anh","text": "Anh Hùng ơi, anh Tính hồi nhỏ hay đi đâu trong làng không?" },
+          { "speaker": "hung",   "text": "Cái giếng đó… hồi nhỏ thằng Tính hay ra đó lắm." },
+          { "speaker": "hung",   "text": "Nó bảo nước giếng này mát hơn mọi chỗ khác. Tôi không biết sao nó phân biệt được." },
+          { "speaker": "hung",   "text": "Bờ ao sau đình nữa. Hay ra đó ném đá, nhìn vòng tròn lan trên mặt nước." },
+          { "speaker": "hung",   "text": "Trẻ con hay để ý mấy thứ người lớn không thèm nhìn." }
+        ]
+      },
+      {
+        "id": 3,
+        "context": "Ngày 3 đêm — Hùng trao chiếc vòng cói mới cho Tính trước khi về.",
+        "lines": [
+          { "speaker": "action",  "text": "(Hùng bỏ vào tay Tính một cái vòng cói mới đan, không nói gì. Quay đi định bước)" },
+          { "speaker": "lan_anh","text": "Anh Hùng…" },
+          { "speaker": "hung",   "text": "Mày mang theo mà dùng." },
+          { "speaker": "action",  "text": "(Hùng bước đi. Không ngoái lại)" }
+        ]
+      }
+    ]
+  },
+
+  "oanquanboy": {
+    "display_name": "Thằng Bi",
+    "location": "Sân đình — chiếu Ô Ăn Quan",
+    "sessions": [
+      {
+        "id": 0,
+        "context": "Ngày 1 — Thằng Bi phát hiện Tính và thách đấu.",
+        "lines": [
+          { "speaker": "oanquanboy", "text": "Ê! Chị kia!" },
+          { "speaker": "lan_anh",    "text": "Ừ, có gì vậy em?" },
+          { "speaker": "oanquanboy", "text": "Anh đó có biết chơi Ô Ăn Quan không?" },
+          { "speaker": "oanquanboy", "text": "Tôi là Bi. Vô địch xóm này ba năm liền rồi đó." },
+          { "speaker": "lan_anh",    "text": "Vậy hả? Để chị hỏi anh Tính xem." },
+          { "speaker": "oanquanboy", "text": "Dám thách không? Tôi chờ đây! Ai sợ thì thôi!" }
+        ]
+      },
+      {
+        "id": 1,
+        "context": "Sau ván đấu đầu — Bi thua nhưng cố vớt vát.",
+        "lines": [
+          { "speaker": "oanquanboy", "text": "Ờ thôi… anh đó chơi giỏi thiệt." },
+          { "speaker": "oanquanboy", "text": "Nhưng mà tôi chưa thua đâu nha! Tôi chỉ… chỉ đang nhường thôi!" },
+          { "speaker": "lan_anh",    "text": "Nhường hả. Nhìn mặt em không giống đang nhường lắm." },
+          { "speaker": "oanquanboy", "text": "Thôi kệ! Lần sau tôi thắng lại liền! Đợi đó!" }
+        ]
+      },
+      {
+        "id": 2,
+        "context": "Ngày 3 — Hội làng. Bi kêu Tính ra thi đấu.",
+        "lines": [
+          { "speaker": "oanquanboy", "text": "Anh đó! Ra thi hội làng đi!" },
+          { "speaker": "oanquanboy", "text": "Tôi cũng thi. Nếu giỏi thật thì mình gặp nhau ở vòng cuối nha!" },
+          { "speaker": "lan_anh",    "text": "Em tự tin vậy?" },
+          { "speaker": "oanquanboy", "text": "Lần này tôi không nhường nữa đâu! Tôi luyện cả tuần rồi!" }
+        ]
+      },
+      {
+        "id": 3,
+        "context": "Sau hội làng — Bi thua lần hai, lần này tâm phục.",
+        "lines": [
+          { "speaker": "oanquanboy", "text": "…Anh đó giỏi thật." },
+          { "speaker": "oanquanboy", "text": "Không phải nhường đâu. Thua thật luôn." },
+          { "speaker": "lan_anh",    "text": "Em chơi tốt lắm rồi. Anh Tính hồi nhỏ luyện nhiều năm mới vậy đó." },
+          { "speaker": "oanquanboy", "text": "Năm sau tôi sẽ thắng anh đó. Chị làm chứng nha!" }
+        ]
+      }
+    ]
+  },
+
+  "young_boy": {
+    "display_name": "Bé trai",
+    "location": "Khắp làng",
+    "sessions": [
+      {
+        "id": 0,
+        "context": "Ngày 1 — Bé trai tò mò về người lạ và Tính.",
+        "lines": [
+          { "speaker": "young_boy", "text": "Ê chị! Chị mới vào làng hả?" },
+          { "speaker": "lan_anh",  "text": "Ừ, chị mới vào. Em biết làng này nhiều không?" },
+          { "speaker": "young_boy", "text": "Con biết hết! Con sống đây từ nhỏ mà." },
+          { "speaker": "young_boy", "text": "Anh kia trông ngộ lắm. Sao anh cứ nhìn con bướm vậy?" },
+          { "speaker": "lan_anh",  "text": "Anh ấy thích bướm. Tên anh là Tính." },
+          { "speaker": "young_boy", "text": "Anh Tính có chơi bi không chị? Con có bi thủy tinh này!" }
+        ]
+      },
+      {
+        "id": 1,
+        "context": "Ngày 2 — Bé trai thấy Tính đứng một mình dưới gốc sung.",
+        "lines": [
+          { "speaker": "young_boy", "text": "Chị ơi, hồi sáng con thấy anh Tính đứng dưới gốc sung một mình." },
+          { "speaker": "lan_anh",  "text": "Anh ấy đứng làm gì vậy em?" },
+          { "speaker": "young_boy", "text": "Không làm gì hết. Chỉ đứng nhìn thôi. Con cũng đứng nhìn theo nhưng không thấy gì cả." },
+          { "speaker": "young_boy", "text": "Anh nhìn cái gì vậy chị?" }
+        ]
+      },
+      {
+        "id": 2,
+        "context": "Ngày 3 — Hội làng. Bé trai háo hức.",
+        "lines": [
+          { "speaker": "young_boy", "text": "Hội làng vui lắm chị ơi! Có bánh đúc, có đèn lồng nữa!" },
+          { "speaker": "lan_anh",  "text": "Em thích nhất phần nào?" },
+          { "speaker": "young_boy", "text": "Con thích Ô Ăn Quan! Chị xem anh Tính chơi đi — nghe nói anh đó giỏi lắm!" },
+          { "speaker": "young_boy", "text": "Thằng Bi nói sẽ thắng nhưng con nghĩ không có đâu!" }
+        ]
+      }
+    ]
+  },
+
+  "young_girl": {
+    "display_name": "Bé gái",
+    "location": "Khắp làng",
+    "sessions": [
+      {
+        "id": 0,
+        "context": "Ngày 1 — Bé gái lo lắng khi thấy Tính.",
+        "lines": [
+          { "speaker": "young_girl", "text": "Chị ơi, anh đó có bị làm sao không ạ?" },
+          { "speaker": "lan_anh",   "text": "Anh ấy không sao đâu em. Sao em hỏi vậy?" },
+          { "speaker": "young_girl", "text": "Anh cứ nhìn con kiến bò hoài mà không đi. Đứng một chỗ lâu lắm." },
+          { "speaker": "young_girl", "text": "Nhìn mắt anh… buồn lắm chị ơi." },
+          { "speaker": "lan_anh",   "text": "Anh ấy chỉ đang nhớ lại chuyện cũ thôi em." },
+          { "speaker": "young_girl", "text": "Nhớ gì mà buồn vậy chị?" }
+        ]
+      },
+      {
+        "id": 1,
+        "context": "Ngày 2 — Bé gái thấy Tính ngồi bên giếng.",
+        "lines": [
+          { "speaker": "young_girl", "text": "Chị ơi! Hồi nãy con thấy anh Tính ngồi bên giếng." },
+          { "speaker": "young_girl", "text": "Anh thả lá xuống giếng rồi nhìn theo. Lâu lắm." },
+          { "speaker": "lan_anh",   "text": "Rồi anh ấy có đi đâu không?" },
+          { "speaker": "young_girl", "text": "Có. Lát sau anh đứng dậy đi về phía đình." },
+          { "speaker": "young_girl", "text": "Anh ấy đang nghĩ gì vậy chị? Có vẻ quan trọng lắm." }
+        ]
+      },
+      {
+        "id": 2,
+        "context": "Ngày 3 tối — Bé gái kể về đom đóm.",
+        "lines": [
+          { "speaker": "young_girl", "text": "Tối nay có đom đóm nhiều lắm chị ơi!" },
+          { "speaker": "lan_anh",   "text": "Ừ chị thấy rồi. Đẹp lắm." },
+          { "speaker": "young_girl", "text": "Mọi năm cũng có nhưng năm nay nhiều hơn. Bà nội con bảo đom đóm nhiều là điềm lành." },
+          { "speaker": "young_girl", "text": "Chị nghĩ điềm lành cho ai vậy chị?" },
+          { "speaker": "lan_anh",   "text": "Chắc cho người cần nhất." }
+        ]
+      }
+    ]
+  },
+
+  "npc_nu": {
+    "display_name": "Người làng",
+    "location": "Khắp làng",
+    "sessions": [
+      {
+        "id": 0,
+        "context": "Ngày 1 — Người phụ nữ làng thấy khách lạ.",
+        "lines": [
+          { "speaker": "npc_nu",  "text": "Chị từ thành phố về à? Làng này lâu lắm rồi ít có khách." },
+          { "speaker": "lan_anh", "text": "Dạ cháu là phóng viên. Cháu về làm bài về làng Thạch Bình ạ." },
+          { "speaker": "npc_nu",  "text": "Phóng viên? Trời ơi. Làng mình lên báo được à?" },
+          { "speaker": "npc_nu",  "text": "Anh đi cùng chị trông quen quen… mà tôi không nhớ ra." },
+          { "speaker": "lan_anh", "text": "Dạ, anh tên Tính ạ." },
+          { "speaker": "npc_nu",  "text": "Chị ở lại chơi mấy ngày không? Làng mình giờ yên lắm, đẹp lắm." }
+        ]
+      },
+      {
+        "id": 1,
+        "context": "Ngày 2 — Nhớ ra Tính là con bà Ngần.",
+        "lines": [
+          { "speaker": "npc_nu",  "text": "Ối! Tôi nhớ ra rồi — anh đó là thằng Tính! Con bà Ngần đó!" },
+          { "speaker": "lan_anh", "text": "Dạ đúng rồi ạ. Bác biết anh Tính à?" },
+          { "speaker": "npc_nu",  "text": "Trời ơi, nó lớn vậy rồi à. Hồi nhỏ tôi hay thấy nó chạy nhảy khắp làng." },
+          { "speaker": "npc_nu",  "text": "Hồi nhỏ nó hay chạy ra bờ ao sau đình lắm. Chẳng biết nó nghĩ gì suốt ngày." },
+          { "speaker": "lan_anh", "text": "Anh ấy là người đặc biệt lắm." },
+          { "speaker": "npc_nu",  "text": "Bà Ngần ngày xưa hiền lắm. Một mình nuôi đứa trẻ không phải máu mủ, chưa bao giờ than một câu." }
+        ]
+      },
+      {
+        "id": 2,
+        "context": "Ngày 3 — Ký ức về bà Ngần.",
+        "lines": [
+          { "speaker": "npc_nu",  "text": "Người như bà Ngần bây giờ hiếm lắm chị ơi." },
+          { "speaker": "npc_nu",  "text": "Bà sống giản dị, không kể khổ bao giờ. Cứ lặng lặng lo cho thằng Tính." },
+          { "speaker": "lan_anh", "text": "Bà ấy mất lâu chưa bác?" },
+          { "speaker": "npc_nu",  "text": "Gần hai mươi năm rồi. Mà làng vẫn nhắc. Người tốt người ta nhớ lâu lắm chị à." }
+        ]
+      }
+    ]
+  }
+}
