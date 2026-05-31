@@ -1,0 +1,208 @@
+[gd_scene format=3 uid="uid://fxycegkphpyp"]
+
+[ext_resource type="Texture2D" uid="uid://cdcgyufr4u45y" path="res://assets/new/tinh_move/ChatGPT_Image_May_30__2026__10_27_55_PM__1_-removebg-preview.png" id="1_1qj44"]
+[ext_resource type="Script" uid="uid://dpod4ogjqu2rh" path="res://tinh.gd" id="1_ih615"]
+[ext_resource type="Texture2D" uid="uid://bu6gs66qih0tl" path="res://assets/new/tinh_move/ChatGPT_Image_May_30__2026__10_28_08_PM__5_-removebg-preview.png" id="2_ih615"]
+[ext_resource type="Texture2D" uid="uid://dcih5wywo2444" path="res://assets/new/tinh_move/ChatGPT_Image_May_30__2026__10_27_58_PM__2_-removebg-preview.png" id="3_dnhat"]
+[ext_resource type="Texture2D" uid="uid://g0btbwvdnqd8" path="res://assets/new/tinh_move/ChatGPT_Image_May_30__2026__10_28_01_PM__3_-removebg-preview.png" id="4_c7ed1"]
+[ext_resource type="Texture2D" uid="uid://cscyjpjufvlha" path="res://assets/new/tinh_move/ChatGPT_Image_May_30__2026__10_28_04_PM__4_-removebg-preview.png" id="5_25ja7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hvxrk"]
+radius = 23.194826
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vjq3t"]
+atlas = ExtResource("1_1qj44")
+region = Rect2(250, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r5783"]
+atlas = ExtResource("1_1qj44")
+region = Rect2(0, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7y3ao"]
+atlas = ExtResource("1_1qj44")
+region = Rect2(750, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nbr24"]
+atlas = ExtResource("1_1qj44")
+region = Rect2(500, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wgf0v"]
+atlas = ExtResource("2_ih615")
+region = Rect2(0, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nlbxc"]
+atlas = ExtResource("2_ih615")
+region = Rect2(250, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_stm8b"]
+atlas = ExtResource("2_ih615")
+region = Rect2(500, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7j6l0"]
+atlas = ExtResource("2_ih615")
+region = Rect2(750, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cx3m0"]
+atlas = ExtResource("3_dnhat")
+region = Rect2(0, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tdvl4"]
+atlas = ExtResource("3_dnhat")
+region = Rect2(250, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7jlgh"]
+atlas = ExtResource("3_dnhat")
+region = Rect2(500, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hduk7"]
+atlas = ExtResource("3_dnhat")
+region = Rect2(750, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ii4f6"]
+atlas = ExtResource("4_c7ed1")
+region = Rect2(0, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sicjx"]
+atlas = ExtResource("4_c7ed1")
+region = Rect2(250, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fc6tx"]
+atlas = ExtResource("4_c7ed1")
+region = Rect2(500, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_be5nm"]
+atlas = ExtResource("4_c7ed1")
+region = Rect2(750, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m36q2"]
+atlas = ExtResource("5_25ja7")
+region = Rect2(0, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xq6xa"]
+atlas = ExtResource("5_25ja7")
+region = Rect2(250, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tchp0"]
+atlas = ExtResource("5_25ja7")
+region = Rect2(500, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r402a"]
+atlas = ExtResource("5_25ja7")
+region = Rect2(750, 0, 250, 250)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0su6k"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vjq3t")
+}],
+"loop": true,
+"name": &"behind",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r5783")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7y3ao")
+}],
+"loop": true,
+"name": &"left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nbr24")
+}],
+"loop": true,
+"name": &"right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wgf0v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nlbxc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_stm8b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7j6l0")
+}],
+"loop": true,
+"name": &"walk_behind",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cx3m0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tdvl4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7jlgh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hduk7")
+}],
+"loop": true,
+"name": &"walk_front",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ii4f6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sicjx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fc6tx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_be5nm")
+}],
+"loop": true,
+"name": &"walk_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m36q2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xq6xa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tchp0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r402a")
+}],
+"loop": true,
+"name": &"walk_right",
+"speed": 5.0
+}]
+
+[node name="tinh" type="CharacterBody2D" unique_id=1698603003]
+script = ExtResource("1_ih615")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=105234563]
+position = Vector2(9, 59)
+shape = SubResource("CircleShape2D_hvxrk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=977179804]
+position = Vector2(4, 3)
+scale = Vector2(0.6, 0.6)
+sprite_frames = SubResource("SpriteFrames_0su6k")
+animation = &"walk_behind"
+frame_progress = 0.5808608

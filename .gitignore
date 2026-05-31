@@ -1,0 +1,44 @@
+# ============================================================
+# Godot 4 — 2d-o-an-quan
+# ============================================================
+
+# Godot generated cache (KHÔNG commit)
+.godot/
+
+# Android export
+/android/
+
+# iOS export
+/ios/
+
+# Export builds
+/exports/
+*.apk
+*.aab
+*.ipa
+*.exe
+*.x86_64
+*.dmg
+*.zip
+
+# Windows-specific
+Thumbs.db
+desktop.ini
+
+# macOS-specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor-specific (VSCode, Rider, etc.)
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Temp / logs
+*.log
+*.tmp
+
+# Assets không cần track (nếu lớn, dùng Git LFS thay)
+# assets/new/Godot 4 Game Development Projects PDF (1).pdf
